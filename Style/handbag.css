@@ -1,0 +1,26 @@
+#vnavbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+#vcombination{
+    margin-top: 50px;
+}
+
+#lab,#handelcolor,#handelsize,#handelwidth,#handelwidth,#handelheight,#handelcatgory,#handelprice{
+    background-color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    border: 1px solid gray;
+}
+
+#vheels{
+    display: grid;
+    grid-template-columns: repeat(4,370px);
+}
+
+.vtitle{
+    text-align: center;
+}

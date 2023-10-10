@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HGeels | NINE WEST</title>
+    <link rel = "icon" href = "https://lh3.googleusercontent.com/vOkdv6GWvUCyLLjzjSUrewsZRJHylWCMhT9eYX6q8AEMZ_Tfk942Ur7OkAmobVZ2Ag"  type = "image/x-icon">
+    <link rel="stylesheet" href="./Style/product.css">
+    <link rel="stylesheet" href="./Style/navbar.css">
+    <link rel="stylesheet" href="./Style/footer.css">
+    <link rel="stylesheet" href="./Style/flatspage.css">
+
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" 	crossorigin="anonymous"></script>>
+</head>
+<body>
+    <div id="rrnavbar">
+        <!--  Nav Bar -->
+    </div>
+
+    <div id="container">
+
+        <div id="vcombination">
+
+            <select name=""  id="handelcolor" onchange="handelcolor()" >
+                <option value="">Color</option>
+                <option value="red">Red</option>
+                <option value="pink">Pink</option>
+                <option value="multi">Multi</option>
+                <option value="black">black</option>
+                <option value="yellow">yellow</option>
+                <option value="cream">cream</option>
+            </select>
+            
+            <select name=""  id="handelsize" onchange="handelsize()" >
+                <option value="">Size</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+    
+            <select name=""  id="handelwidth" onchange="handelwidth()" >
+                <option value="">Width</option>
+                <option value="M">M</option>
+                <option value="W">w</option>
+            </select>
+    
+            <select name=""  id="handelheight" onchange="handelheight()" >
+                <option value="">Heel Height</option>
+                <option value="Heigh">Heigh</option>
+                <option value="Low">Low</option>
+                <option value="Mid">Mid</option>
+            </select>
+    
+            
+            <select name=""  id="handelcatgory" onchange="handelcatgory()" >
+                <option value="">Category</option>
+                <option value="Boot">Boot</option>
+                <option value="Flats">Flats</option>
+                <option value="Heels">Heels</option>
+            </select>
+    
+            <select name=""  id="handelprice" onchange="handelprice()" >
+                <option value="">Price</option>
+                <option value="89.00">Under$109</option>
+                <option value="109.00">Under$170</option>
+                <option value="209.00">Under$260</option>
+            </select>
+    
+            <select name=""  id="lab" onchange="handelpriceshort()" >
+                <option value="">FEATURE</option>                                  
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+            </select>
+        </div>
+    
+        <div id="vheels"></div>
+
+    </div>
+
+    <div id="rrfooter">
+        <!-- FOOTER -->
+    </div>
+</body>
+</html>
+
+<script src="./Scripts/data.js"></script>
+<script type="module">
+
+import navbar from "./components/navbar.js";
+    document.querySelector("#rrnavbar").innerHTML=navbar();
+
+    document.querySelector("#rsigninhover").addEventListener("click",function(){
+        window.location.href="signin.html"
+    })
+
+    import footer from "./components/footer.js";
+    document.querySelector("#rrfooter").innerHTML=footer();
+</script>
+
+
+<script>
+
+var data =[
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.NWSPEAKUP.JJ0CAB5.RZ_92e7b275-960a-42ab-bfe7-40c12625c1b2_400x.jpg?v=1588019712%27%20data-src=",
+        title : "Speakup Almond Toe Flats",
+        price : "69.00",
+        color : "MORE COLORS",
+        heelscolor : "multi",
+        heelsize : "8",
+        heelwidth : "W",
+        heelheight : "Low",
+        heelcategory : "Heels"
+        
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.NWSPEAKUP.JJB29A4.RZ_72cccdbb-7e7e-4622-9780-8b4785171d33_400x.jpg?v=1582668627%27%20data-src=",
+        title : "Speakup Almond Toe Flats",
+        price : "108.00" ,
+        color : "MORE COLORS",
+        heelscolor : "cream",
+        heelsize : "8",
+        heelwidth : "W",
+        heelheight : "Low",
+        heelcategory : "Heels"
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.NWSPEAKUP.JJ0CCB1.RZ_3fc02bfb-aef0-47ec-9c63-82a34d1d2431_400x.jpg?v=1582668528%27%20data-src=",
+        title : "Speakup Almond Toe Flats",
+        price : "89.00",
+        color : "MORE COLORS",
+        heelscolor : "black",
+        heelsize : "8",
+        heelwidth : "W",
+        heelheight : "Low",
+        heelcategory : "Heels"
+
+    },    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.NWABAY.JJ169A0.RZ_3057aa73-2afa-4cd3-a30b-82fa68096b85_400x.jpg?v=1588000823%27%20data-src=",
+        title : "Abay Smoking Flats",
+        price : "149.00",
+        color : "MORE COLORS",
+        heelscolor : "pink",
+        heelsize : "8",
+        heelwidth : "W",
+        heelheight : "Low",
+        heelcategory : "Heels"
+
+    },    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.NWSPEAKUP.JJ169R6.RZ_fd1c110c-7ea1-4511-a145-0d9c97fcfb8f_400x.jpg?v=1582668521%27%20data-src=",
+        title : "Feather Pointy Toe Slingback Pumps",
+        price : "89.00",
+        color : "MORE COLORS",
+        heelscolor : "gray",
+        heelsize : "8",
+        heelwidth : "W",
+        heelheight : "Low",
+        heelcategory : "Heels"
+
+    },   
+     {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.NWSPEAKUP.JJ169R6.RZ_fd1c110c-7ea1-4511-a145-0d9c97fcfb8f_400x.jpg?v=1582668521%27%20data-src=",
+        title : "Feather Pointy Toe Slingback Pumps",
+        price : "89.00",
+        color : "MORE COLORS",
+        heelscolor : "yellow",
+        heelsize : "8",
+        heelwidth : "W",
+        heelheight : "Low",
+        heelcategory : "Heels"
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.NWSPEAKUP.JJ169R6.RZ_fd1c110c-7ea1-4511-a145-0d9c97fcfb8f_400x.jpg?v=1582668521%27%20data-src=",
+        title : "Feather Pointy Toe Slingback Pumps",
+        price : "109.00",
+        color : "MORE COLORS",
+        heelscolor : "cream",
+        heelsize : "6",
+        heelwidth : "W",
+        heelheight : "Low",
+        heelcategory : "Heels"
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.WNSPEAKUP3-MBRLL.RZ_7f2262ed-c52b-40bc-b2ba-4dcd9a4f5b75_400x.jpg?v=1582668551%27%20data-src=",
+        title : "Feather Pointy Toe Slingback Pumps",
+        price : "89.00",
+        color : "MORE COLORS",
+        heelscolor : "pink",
+        heelsize : "7",
+        heelwidth : "W",
+        heelheight : "Mid",
+        heelcategory : "Boot"
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.WNSPEAKUP3-LNA02.RZ_99941d5c-9a6b-4a3a-bcf4-da85900af615_400x.jpg?v=1582668589%27%20data-src=",
+        title : "Feather Pointy Toe Slingback Pumps",
+        price : "89.00",
+        color : "MORE COLORS",
+        heelscolor : "black",
+        heelsize : "7",
+        heelwidth : "W",
+        heelheight : "Mid",
+        heelcategory : "Boot"
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.NWABAY.JJ0BDA4.RZ_e7ffab22-07a2-4aa8-a5c1-a3adff088ee8_400x.jpg?v=1582663054%27%20data-src=",
+        title : "Azur Pointy Toe Mules",
+        price : "209.00",
+        color : "MORE COLORS",
+        heelscolor : "multi",
+        heelsize : "7",
+        heelwidth : "W",
+        heelheight : "Mid",
+        heelcategory : "Boot"
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.WNBEVA3-LPILL.RZ_400x.jpg?v=1609377916%27%20data-src=",
+        title : "Azur Pointy Toe Mules",
+        price : "812.00",
+        color : "MORE COLORS",
+        heelscolor : "multi",
+        heelsize : "7",
+        heelwidth : "W",
+        heelheight : "Mid",
+        heelcategory : "Boot"
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.WNALENA-BLKLE.RZ_400x.jpg?v=1591380908%27%20data-src=",
+        title : "Azur Pointy Toe Mules",
+        price : "219.00",
+        color : "MORE COLORS",
+        heelscolor : "cream",
+        heelsize : "7",
+        heelwidth : "M",
+        heelheight : "Mid",
+        heelcategory : "Boot"
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.WNBEVA3-BLKLL.RZ_109ed0eb-34ac-40e5-8eb9-7553767d73a3_400x.jpg?v=1613044842%27%20data-src=",
+        title : "Mitz Ankle Strap Sandals",
+        price : "89.00",
+        color : "MORE COLORS",
+        heelscolor : "black",
+        heelsize : "7",
+        heelwidth : "M",
+        heelheight : "Mid",
+        heelcategory : "Boot"
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.WNSPEAKUP3-TAMLL.RZ_2cd2fc54-1bfb-4f58-87ac-9da852d97d70_400x.jpg?v=1582668652%27%20data-src=",
+        title : "Mitz Ankle Strap Sandals",
+        price : "49.00",
+        color : "MORE COLORS",
+        heelscolor : "daimond",
+        heelsize : "6",
+        heelwidth : "M",
+        heelheight : "Mid",
+        heelcategory : "Flats"
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.WNDARBIE2-BRMFB.RZ_400x.jpg?v=1609378111%27%20data-src=",
+        title : "Folowe d'Orsay Pointy Toe Pumps",
+        price : "199.00",
+        color : "MORE COLORS",
+        heelscolor : "red",
+        heelsize : "6",
+        heelwidth : "M",
+        heelheight : "Heigh",
+        heelcategory : "Flats"
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.WNBEVA3-GOLLL.RZ_400x.jpg?v=1611961266%27%20data-src=",
+        title : "Fornow Dress Booties",
+        price : "89.00",
+        color : "MORE COLORS",
+        heelscolor : "red",
+        heelsize : "6",
+        heelwidth : "M",
+        heelheight : "Heigh",
+        heelcategory : "Flats"
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.WNFERDI9X9-BLKLE.RZ_400x.jpg?v=1594835936%27%20data-src=",
+        title : "Trendz Pointy Toe Pumps",
+        price : "89.00",
+        color : "MORE COLORS",
+        heelscolor : "multi",
+        heelsize : "6",
+        heelwidth : "M",
+        heelheight : "Heigh",
+        heelcategory : "Flats"
+
+    },
+    {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.WNLORNA3-MBRLL.RZ_400x.jpg?v=1600723980%27%20data-src=",
+        title : "Fresh Pointy Toe Pumps",
+        price : "89.00",
+        color : "MORE COLORS",
+        heelscolor : "multi",
+        heelsize : "6",
+        heelwidth : "M",
+        heelheight : "Heigh",
+        heelcategory : "Flats"
+
+    },   {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.WNBRAYDIN3-BLKLL.RZ_400x.jpg?v=1600723901%27%20data-src=",
+        title : "Speakup Almond Toe Flats",
+        price : "89.00",
+        color : "MORE COLORS",
+        heelscolor : "multi",
+        heelsize : "8",
+        heelwidth : "M",
+        heelheight : "Heigh",
+        heelcategory : "Flats"
+
+    },   {
+        image : "https://cdn.shopify.com/s/files/1/0267/3737/7324/products/PG.WNOLLY9X9-NAMLE.RZ_400x.jpg?v=1594058767%27%20data-src=",
+        title : "Feather Pointy Toe Slingback Pumps",
+        price : "109.00",
+        color : "MORE COLORS",
+        heelscolor : "cream",
+        heelsize : "8",
+        heelwidth : "M",
+        heelheight : "Heigh",
+        heelcategory : "Flats"
+
+    },
+]
+
+console.log(data)
+
+localStorage.setItem('user', JSON.stringify(data));
+
+        function handelpriceshort(){
+
+            var products =   JSON.parse(localStorage.getItem("user"));
+
+
+            var Selected = document.querySelector("#lab").value
+
+            console.log(Selected)
+
+            if(Selected == "low"){
+                
+                products.sort( function (a,b){
+                    return Number(a.price) - Number(b.price);
+                })
+                console.log(products)
+            }
+               else if(Selected == "high"){
+                
+                products.sort( function (a,b){
+                    return Number(b.price) - Number(a.price);
+                })
+                console.log(products)
+            }
+            setHtml(products)
+        }
+
+        function handelpriceshort(){
+            var products =   JSON.parse(localStorage.getItem("user"));
+
+
+            var Selected = document.querySelector("#lab").value
+
+            console.log(Selected)
+
+            if(Selected == "low"){
+                
+                products.sort( function (a,b){
+                    return Number(a.price) - Number(b.price);
+                })
+                console.log(products)
+            }
+               else if(Selected == "high"){
+                
+                products.sort( function (a,b){
+                    return Number(b.price) - Number(a.price);
+                })
+                console.log(products)
+            }
+            setHtml(products)
+        }
+         
+        function handelcolor(){
+
+            var Selected = document.querySelector("#handelcolor").value
+
+            console.log(Selected)
+
+            if(Selected != ""){
+              
+                let newdata = data.filter(function(el){
+                    return el.heelscolor==Selected
+                })
+                setHtml(newdata)
+
+            }else{
+                setHtml(data)
+
+            }
+        }
+
+        function handelsize(){
+
+            var Selected = document.querySelector("#handelsize").value
+
+            console.log(Selected)
+
+            if(Selected != ""){
+            
+                let newdata = data.filter(function(el){
+                    return el.heelsize==Selected
+                })
+                setHtml(newdata)
+
+            }else{
+                setHtml(data)
+
+        }
+    }
+
+    function handelwidth(){
+
+        var Selected = document.querySelector("#handelwidth").value
+
+        console.log(Selected)
+
+        if(Selected != ""){
+
+            let newdata = data.filter(function(el){
+                return el.heelwidth==Selected
+            })
+            setHtml(newdata)
+
+        }else{
+            setHtml(data)
+
+        }
+    }
+
+    function handelheight(){
+
+            var Selected = document.querySelector("#handelheight").value
+
+            console.log(Selected)
+
+            if(Selected != ""){
+
+                let newdata = data.filter(function(el){
+                    return el.heelheight==Selected
+                })
+                setHtml(newdata)
+
+            }else{
+                setHtml(data)
+
+        }
+    }
+
+
+    function handelcatgory(){
+
+        var Selected = document.querySelector("#handelcatgory").value
+
+        console.log(Selected)
+
+        if(Selected != ""){
+
+            let newdata = data.filter(function(el){
+                return el.heelcategory==Selected
+            })
+            setHtml(newdata)
+
+        }else{
+            setHtml(data)
+
+        }
+    }
+
+    function handelprice(){
+
+        var Selected = document.querySelector("#handelprice").value
+
+        console.log(Selected)
+
+        if(Selected != ""){
+
+            let newdata = data.filter(function(el){
+
+                if(el.price > 70 && el.price < 120){
+                    return el.price ;
+                }
+                    // return el.price==Selected
+            })
+            setHtml(newdata)
+
+        }else{
+            setHtml(data)
+
+        }
+    }
+
+    setHtml(data)
+    function setHtml(data){
+        var htmlstring = ""
+
+        for (let i = 0; i <data.length; i++) {
+            htmlstring= htmlstring+`<div id="vbox">
+                <div >
+                    <img src="${data[i]["image"]}">
+                    <p class="vtitle">${data[i]["title"]}</p>
+                    <p class="vtitle">${"$"+data[i]["price"]}</p>
+                    <p class="vtitle"><u>${data[i]["color"]}</u></p>
+                </div>
+            </div>`;
+
+        }
+
+
+        var vheels = document.getElementById('vheels');
+        vheels.innerHTML = htmlstring;
+
+    }
+
+    window.onload = function(){
+        setHtml();
+    }
+</script>

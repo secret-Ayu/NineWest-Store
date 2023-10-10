@@ -1,0 +1,28 @@
+#vnavbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+#box{
+    display: flex;
+    height: 2000px;
+    margin-top: 60px;
+}
+
+#leftbox{
+    flex: 3;
+    margin-left: 50px;
+}
+
+#rightbox{
+    flex: 2;
+    margin-left: 20px;
+}
+
+#container{
+    margin-bottom: 450px;
+}
+
+/* p{
+    font-size: 20px;
+} */
