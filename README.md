@@ -1,2 +1,2 @@
 # NINEWEST
-Site is live at https://nine-west.onrender.com
+<a href="https://nine-west.onrender.com" target="_blank">**Visit Now** 🚀</a>
