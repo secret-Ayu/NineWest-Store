@@ -1,2 +1,2 @@
 # NINEWEST
-site is live at https://secret-ayu.github.io/NINEWEST/
+Site is live at https://nine-west.onrender.com
